@@ -1,0 +1,13 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:q
+    runs-on: ubunt2u2
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Yah doNe D1d iT Wr0ng whAt y0u doing?'' first issue'
+        pr-message: 'All Your Base, Are belong to us!'' first pr'
